@@ -1,0 +1,107 @@
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.article {
+    margin: 10px;
+}
+
+.article-section {
+    font-size: 25px;
+}
+
+@media screen and (min-width:576px) {
+    .article {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .article {
+        width: 290px;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .article {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width:1140px) {
+    .article {
+        width: 370px;
+    }
+}
+
+@media screen and (min-width:1320px) {
+    .article {
+        width: 500px;
+    }
+}
+
+#video-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#video,
+#advertisement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* width: 100%;
+    min-height: 100%; */
+}
+
+#play-button {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 400ms;
+}
+
+#play-button:hover {
+    background-color: #f00;
+    border: none;
+}
+
+#skip-button {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 400ms;
+}
+
+#skip-button:hover {
+    background-color: #f00;
+    border: none;
+}
